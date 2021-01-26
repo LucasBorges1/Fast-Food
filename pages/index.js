@@ -1,10 +1,5 @@
-const Index = () => (
+import Layout from "../components/Layout";
 
-    <div>
-
-        <p>Olá, essa página está em desenvolvimento, por favor volte mais tarde!</p>
-
-    </div>
-);
+const Index = () => <Layout>Bem vindo a FastFood, no momento estamos em manutenção, por favor aguarde!</Layout>
 
 export default Index;
