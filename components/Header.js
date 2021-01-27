@@ -1,23 +1,10 @@
-const HeaderStyle = {
+import Link from "next/link";
+import "./Header.scss";
 
-    backgroundColor: "blue",
-
-    color: "white",
-
-    width: "100%",
-    
-    height: "50px"
-};
-
-
-const Header = () => (
-
-    <div className="Header" style={HeaderStyle}>
-
-         HEADER
-
-    </div>  
+const Header = props => (
+    <Link href="/">
+        <div className="Header">{props.appTitle}</div>
+    </Link>
 );
-
 
 export default Header;

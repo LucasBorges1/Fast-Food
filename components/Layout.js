@@ -1,46 +1,34 @@
+import Head from "next/head";
+
 import Header from "./Header";
+
 import NavBar from "./NavBar";
 
+import "./Layout.scss";
 
-const layoutStyle = {
+import "./index.scss";
 
-    display: "flex",
+import "./Layout.scss";
 
-    flexDirection: "column",
+const Layout = props => {
 
-    height: "100%",
+    const appTitle = `> FAST FOOD`
 
-    width: "100%"
+
+    return (
+
+        <div className="Layout">
+            <Head>
+                <title>Fast Food</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta charSet="utf-8" />
+            </Head>
+
+            <Header appTitle={appTitle} />
+            <div className="Content">{props.children}</div>
+            <NavBar />
+        </div>    
+    );
 };
-
-
-const contentStyle = {
-
-    flex: 1,
-
-    display: "flex",
-
-    flexDirection: "column"
-};
-
-
-const Layout = props => (
-
-    <div className="Layout" style={layoutStyle}>
-
-        <Header />
-
-    <div className="Content" style={contentStyle}>
-
-        {props.children}
-
-    </div>
-
-        <NavBar />
-
-    </div>    
-        
-);
-
-
+ 
 export default Layout;

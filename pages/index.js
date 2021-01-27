@@ -1,5 +1,7 @@
 import Layout from "../components/Layout";
 
-const Index = () => <Layout>Bem vindo a FastFood, no momento estamos em manutenção, por favor aguarde!</Layout>
+import "../components/index.scss";
+
+const Index = () => <Layout>Bem vindo ao Fast Food</Layout>;
 
 export default Index;

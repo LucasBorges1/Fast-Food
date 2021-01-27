@@ -1,0 +1,25 @@
+@import "../theme/theme";
+
+
+.Header {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 50px;
+    width: 100%;
+
+
+    padding: 0 20px;
+
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+
+    background: rgb(2, 90, 223);
+
+    cursor: pointer;
+}
