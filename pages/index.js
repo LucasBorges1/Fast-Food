@@ -1,7 +1,14 @@
 import Layout from "../components/Layout";
 
-import "../components/index.scss";
 
-const Index = () => <Layout>Bem vindo ao Fast Food</Layout>;
+import Link from "next/link";
 
+const Index = () => (
+<Layout>
+    <br />
+    <Link href="/explore">
+        <a>Bem vindo ao Fast Food! Comece a explorar</a>
+    </Link>
+</Layout>
+);
 export default Index;
